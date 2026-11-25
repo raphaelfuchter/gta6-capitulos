@@ -11,8 +11,8 @@
 :root{--bg:#0d0718;--card:#1a1029cc;--line:#ffffff1a;--txt:#f4ecff;--mut:#b9a8d6;--pink:#ff3d9a;--orange:#ff9d3d;--cyan:#2de2e6;--violet:#8b5cf6}
 *{box-sizing:border-box;margin:0}
 body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
-.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;padding:48px 16px;overflow:hidden;
- background:linear-gradient(180deg,#0d071855,#0d071822 50%,#0d0718 98%),url(img/hero.jpg) center/cover}
+.hero{text-align:center;padding:0 0 40px}
+.hero picture img{display:block;width:100%;height:auto;-webkit-mask:linear-gradient(#000 80%,transparent);mask:linear-gradient(#000 80%,transparent)}
 .sun{position:absolute;bottom:22%;left:50%;width:min(70vw,420px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;
  background:linear-gradient(#ffe36b,#ff7a3d 60%,#ff3d9a);
  -webkit-mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%);mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%)}
@@ -52,9 +52,8 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
 </head>
 <body>
 <header class="hero">
- 
- <div class="hero-in">
-  <div class="logo">VI</div>
+ <picture><source media="(max-width:700px)" srcset="img/hero-m.jpg"><img src="img/hero.jpg" alt="Arte oficial de Grand Theft Auto VI" width="2400" height="1350"></picture>
+ <div class="hero-in" style="padding:0 16px">
   <span class="tag">Guia · Fim de capítulo</span>
   <p>As missões que viram o capítulo em Leonida — e tudo que você precisa fazer <b>antes</b> delas pra não perder nada.</p>
  </div>
