@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI · Fim de Capítulo</title>
+<meta name="description" content="Missões que encerram cada capítulo do GTA 6 e o que fazer antes delas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0718;--card:#1a1029cc;--line:#ffffff1a;--txt:#f4ecff;--mut:#b9a8d6;--pink:#ff3d9a;--orange:#ff9d3d;--cyan:#2de2e6;--violet:#8b5cf6}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;padding:48px 16px;overflow:hidden;
+ background:linear-gradient(180deg,#2a0f4a 0%,#7a1d6b 38%,#ff3d9a 58%,#ff9d3d 72%,#0d0718 100%)}
+.sun{position:absolute;bottom:22%;left:50%;width:min(70vw,420px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;
+ background:linear-gradient(#ffe36b,#ff7a3d 60%,#ff3d9a);
+ -webkit-mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%);mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%)}
+.palms{position:absolute;inset:auto 0 0 0;height:45%;display:flex;justify-content:space-between;align-items:flex-end;pointer-events:none}
+.palms svg{height:100%;fill:#0d0718}
+.palms svg:last-child{transform:scaleX(-1)}
+.grid{position:absolute;inset:auto 0 0;height:22%;background:
+ linear-gradient(transparent 0,#0d0718),repeating-linear-gradient(90deg,#ff3d9a55 0 2px,transparent 2px 60px),repeating-linear-gradient(0deg,#ff3d9a55 0 2px,transparent 2px 30px);
+ transform:perspective(300px) rotateX(55deg);transform-origin:bottom}
+.hero-in{position:relative;z-index:2}
+.logo{font:clamp(5rem,22vw,11rem)/.85 Anton,sans-serif;letter-spacing:-2px;
+ background:linear-gradient(160deg,#fff 10%,#ffd1ec 40%,var(--pink) 70%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 6px 30px #ff3d9a88)}
+.tag{display:inline-block;margin-top:18px;padding:6px 14px;border:1px solid #ffffff55;border-radius:99px;backdrop-filter:blur(6px);background:#00000033;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}
+.hero p{max-width:520px;margin:16px auto 0;color:#fff;opacity:.9}
+main{max-width:980px;margin:0 auto;padding:0 16px 80px;display:grid;gap:28px}
+.cap{position:relative;display:grid;grid-template-columns:auto 1fr;gap:20px;padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--card);backdrop-filter:blur(10px);overflow:hidden}
+.cap::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 0 0,var(--c)33,transparent);pointer-events:none}
+.num{font:4.5rem/1 Anton,sans-serif;color:var(--c);text-shadow:0 0 24px var(--c)}
+.num small{display:block;font:600 .7rem Inter;letter-spacing:.2em;color:var(--mut);text-transform:uppercase}
+.final{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.blip{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#fff2 0,#0000 70%),var(--c);box-shadow:0 0 0 3px #0d0718,0 0 0 5px var(--c),0 0 24px var(--c)}
+.blip svg{width:26px;fill:#0d0718}
+.lbl{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+h2{font:clamp(1.6rem,5vw,2.3rem)/1.1 Anton,sans-serif;letter-spacing:.5px}
+ul{list-style:none;padding:0;margin-top:18px;display:grid;gap:10px}
+li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:#ffffff08;border:1px solid var(--line)}
+li .ic{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:1rem;background:#ffffff12}
+li b{color:#fff}
+.money{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:6px 12px;border-radius:99px;background:#22c55e22;color:#86efac;font-weight:800;font-size:.9rem;border:1px solid #22c55e55}
+.warn{margin-top:14px;padding:12px 14px;border-left:3px solid var(--orange);background:#ff9d3d14;border-radius:0 12px 12px 0;color:#ffd9b0;font-size:.92rem}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
+@media (max-width:600px){.cap{grid-template-columns:1fr;padding:18px}.num{font-size:3.4rem}.num small{display:inline;margin-left:8px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="sun"></div><div class="grid"></div>
+ <div class="palms" aria-hidden="true">
+  <svg viewBox="0 0 120 300"><path d="M58 300c4-80 10-150 2-210l6-1c9 60 3 130-2 211z"/><path d="M62 92C40 60 10 58 0 70c25-6 45 2 60 24zm2-2c10-30 38-44 56-40-24 2-42 16-54 42zm-2 0C50 60 30 40 8 40c26 8 42 26 52 52zm2 2c22-18 46-18 56-6-22-6-40-2-54 8zm-2-2c-2-30 10-56 26-62-14 16-20 36-24 62z"/></svg>
+  <svg viewBox="0 0 120 300"><path d="M58 300c4-80 10-150 2-210l6-1c9 60 3 130-2 211z"/><path d="M62 92C40 60 10 58 0 70c25-6 45 2 60 24zm2-2c10-30 38-44 56-40-24 2-42 16-54 42zm-2 0C50 60 30 40 8 40c26 8 42 26 52 52zm2 2c22-18 46-18 56-6-22-6-40-2-54 8zm-2-2c-2-30 10-56 26-62-14 16-20 36-24 62z"/></svg>
+ </div>
+ <div class="hero-in">
+  <div class="logo">VI</div>
+  <span class="tag">Guia · Fim de capítulo</span>
+  <p>As missões que viram o capítulo em Leonida — e tudo que você precisa fazer <b>antes</b> delas pra não perder nada.</p>
+ </div>
+</header>
+
+<main>
+ <section class="cap" style="--c:var(--pink)">
+  <div class="num">01<small>Capítulo</small></div>
+  <div>
+   <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></div>
+    <div><div class="lbl">Última missão</div><h2>Armadilha para turistas</h2></div></div>
+   <ul>
+    <li><span class="ic">🥃</span><span>Opcional <b>“Compre o rum da Shirley”</b></span></li>
+    <li><span class="ic">🛵</span><span>Opcional <b>“Roube a scooter”</b></span></li>
+    <li><span class="ic">🧘</span><span><b>Meditação com a Lucia</b> na casa do Jason — libera depois de “Com os pés no chão”</span></li>
+    <li><span class="ic">🏦</span><span>Deposite pelo menos <b>US$ 5.000</b></span></li>
+   </ul>
+   <div class="warn">⚠️ O dinheiro no bolso some na virada de capítulo.</div>
+  </div>
+ </section>
+
+ <section class="cap" style="--c:var(--orange)">
+  <div class="num">02<small>Capítulo</small></div>
+  <div>
+   <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13h-6v-7H9v7z"/></svg></div>
+    <div><div class="lbl">Última missão</div><h2>Fazendo o check-out</h2></div></div>
+   <ul>
+    <li><span class="ic">✉️</span><span>Pegue as <b>duas cartas</b> no motel</span></li>
+    <li><span class="ic">📰</span><span>Pegue as <b>duas revistas</b> no motel</span></li>
+   </ul>
+   <span class="money">💵 Só abre com US$ 15.000</span>
+  </div>
+ </section>
+
+ <section class="cap" style="--c:var(--cyan)">
+  <div class="num">03<small>Capítulo</small></div>
+  <div>
+   <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4zm4-4h8v4H8zm3 8v4h2v-4z"/></svg></div>
+    <div><div class="lbl">Última missão</div><h2>O Assalto ao Cartel</h2></div></div>
+   <ul>
+    <li><span class="ic">🏁</span><span><b>“Corrida contra Yago”</b> — só com o Jason</span></li>
+    <li><span class="ic">📰</span><span>Pegue as <b>duas revistas</b> do apartamento</span></li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="cap" style="--c:var(--violet)">
+  <div class="num">04<small>Capítulo</small></div>
+  <div>
+   <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg></div>
+    <div><div class="lbl">Última missão</div><h2>Começando do zero</h2></div></div>
+   <ul>
+    <li><span class="ic">📞</span><span>Opcional da Lucia, provavelmente <b>“Esta é uma chamada gratuita de...”</b> — cara de ligação da prisão</span></li>
+    <li><span class="ic">🚤</span><span><b>Ultimate Edition:</b> use o barco em Washington Beach</span></li>
+   </ul>
+   <div class="warn">⚠️ Nome em PT não confirmado — procure a opcional da Lucia com ligação da prisão.</div>
+  </div>
+ </section>
+</main>
+<footer>Guia não oficial feito por fã. Sem afiliação com a Rockstar Games.</footer>
+</body>
+</html>
