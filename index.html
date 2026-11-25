@@ -12,7 +12,7 @@
 *{box-sizing:border-box;margin:0}
 body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
 .hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;padding:48px 16px;overflow:hidden;
- background:linear-gradient(180deg,#2a0f4a 0%,#7a1d6b 38%,#ff3d9a 58%,#ff9d3d 72%,#0d0718 100%)}
+ background:linear-gradient(180deg,#0d071855,#0d071822 50%,#0d0718 98%),url(img/hero.jpg) center/cover}
 .sun{position:absolute;bottom:22%;left:50%;width:min(70vw,420px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;
  background:linear-gradient(#ffe36b,#ff7a3d 60%,#ff3d9a);
  -webkit-mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%);mask:linear-gradient(#000 55%,transparent 55% 60%,#000 60% 68%,transparent 68% 73%,#000 73% 81%,transparent 81% 87%,#000 87%)}
@@ -29,7 +29,7 @@ body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-se
 .tag{display:inline-block;margin-top:18px;padding:6px 14px;border:1px solid #ffffff55;border-radius:99px;backdrop-filter:blur(6px);background:#00000033;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}
 .hero p{max-width:520px;margin:16px auto 0;color:#fff;opacity:.9}
 main{max-width:980px;margin:0 auto;padding:0 16px 80px;display:grid;gap:28px}
-.cap{position:relative;display:grid;grid-template-columns:auto 1fr;gap:20px;padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--card);backdrop-filter:blur(10px);overflow:hidden}
+.cap{position:relative;display:grid;grid-template-columns:auto 1fr;padding-top:0!important;gap:20px;padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--card);backdrop-filter:blur(10px);overflow:hidden}
 .cap::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 0 0,var(--c)33,transparent);pointer-events:none}
 .num{font:4.5rem/1 Anton,sans-serif;color:var(--c);text-shadow:0 0 24px var(--c)}
 .num small{display:block;font:600 .7rem Inter;letter-spacing:.2em;color:var(--mut);text-transform:uppercase}
@@ -44,13 +44,15 @@ li .ic{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-ite
 li b{color:#fff}
 .money{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:6px 12px;border-radius:99px;background:#22c55e22;color:#86efac;font-weight:800;font-size:.9rem;border:1px solid #22c55e55}
 .warn{margin-top:14px;padding:12px 14px;border-left:3px solid var(--orange);background:#ff9d3d14;border-radius:0 12px 12px 0;color:#ffd9b0;font-size:.92rem}
+.shot{grid-column:1/-1;margin:0 -24px;height:clamp(180px,40vw,320px);background:var(--img) center/cover;-webkit-mask:linear-gradient(#000 60%,transparent);mask:linear-gradient(#000 60%,transparent)}
+@media (max-width:600px){.shot{margin:0 -18px}}
 footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
 @media (max-width:600px){.cap{grid-template-columns:1fr;padding:18px}.num{font-size:3.4rem}.num small{display:inline;margin-left:8px}}
 </style>
 </head>
 <body>
 <header class="hero">
- <div class="sun"></div><div class="grid"></div>
+ 
  <div class="palms" aria-hidden="true">
   <svg viewBox="0 0 120 300"><path d="M58 300c4-80 10-150 2-210l6-1c9 60 3 130-2 211z"/><path d="M62 92C40 60 10 58 0 70c25-6 45 2 60 24zm2-2c10-30 38-44 56-40-24 2-42 16-54 42zm-2 0C50 60 30 40 8 40c26 8 42 26 52 52zm2 2c22-18 46-18 56-6-22-6-40-2-54 8zm-2-2c-2-30 10-56 26-62-14 16-20 36-24 62z"/></svg>
   <svg viewBox="0 0 120 300"><path d="M58 300c4-80 10-150 2-210l6-1c9 60 3 130-2 211z"/><path d="M62 92C40 60 10 58 0 70c25-6 45 2 60 24zm2-2c10-30 38-44 56-40-24 2-42 16-54 42zm-2 0C50 60 30 40 8 40c26 8 42 26 52 52zm2 2c22-18 46-18 56-6-22-6-40-2-54 8zm-2-2c-2-30 10-56 26-62-14 16-20 36-24 62z"/></svg>
@@ -64,6 +66,7 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
 
 <main>
  <section class="cap" style="--c:var(--pink)">
+  <div class="shot" style="--img:url(img/cap1.jpg)" role="img" aria-label="Arte oficial GTA VI"></div>
   <div class="num">01<small>Capítulo</small></div>
   <div>
    <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></div>
@@ -79,6 +82,7 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
  </section>
 
  <section class="cap" style="--c:var(--orange)">
+  <div class="shot" style="--img:url(img/cap2.jpg)" role="img" aria-label="Arte oficial GTA VI"></div>
   <div class="num">02<small>Capítulo</small></div>
   <div>
    <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13h-6v-7H9v7z"/></svg></div>
@@ -92,6 +96,7 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
  </section>
 
  <section class="cap" style="--c:var(--cyan)">
+  <div class="shot" style="--img:url(img/cap3.jpg)" role="img" aria-label="Arte oficial GTA VI"></div>
   <div class="num">03<small>Capítulo</small></div>
   <div>
    <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4zm4-4h8v4H8zm3 8v4h2v-4z"/></svg></div>
@@ -104,6 +109,7 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
  </section>
 
  <section class="cap" style="--c:var(--violet)">
+  <div class="shot" style="--img:url(img/cap4.jpg)" role="img" aria-label="Arte oficial GTA VI"></div>
   <div class="num">04<small>Capítulo</small></div>
   <div>
    <div class="final"><div class="blip"><svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg></div>
@@ -116,6 +122,6 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:0 16px 40px}
   </div>
  </section>
 </main>
-<footer>Guia não oficial feito por fã. Sem afiliação com a Rockstar Games.</footer>
+<footer>Guia não oficial feito por fã. Sem afiliação com a Rockstar Games. Imagens © Rockstar Games.</footer>
 </body>
 </html>
